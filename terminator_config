@@ -1,0 +1,29 @@
+[global_config]
+  window_state = hidden
+  handle_size = 0
+  suppress_multiple_term_dialog = True
+  borderless = True
+  geometry_hinting = False
+  tab_position = hidden
+  inactive_color_offset = 0.74
+[keybindings]
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    use_system_font = False
+    cursor_shape = underline
+    background_image = None
+    cursor_color = "#ffffff"
+    foreground_color = "#ffffff"
+    icon_bell = False
+    show_titlebar = False
+    font = DejaVu Sans Mono 8
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
