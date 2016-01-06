@@ -32,6 +32,11 @@ bindsym $mod+Shift+n exec nautilus
 # start WireShark
 # bindsym $mod+Shift+n exec wireshark 
 
+# change backroung
+bindsym $mod+Shift+x exec --no-startup-id "/usr/bin/feh --bg-scale /home/qm0937/yin/configs/i3wm/background/3.jpg"
+# black bacground
+
+bindsym $mod+Shift+u exec --no-startup-id "/usr/bin/feh --bg-scale /home/qm0937/yin/configs/i3wm/background/6.jpg"
 #-----------------------------------
 
 #lock
@@ -43,7 +48,7 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 
-exec --no-startup-id xsetroot -solid "#000000"
+# exec --no-startup-id xsetroot -solid "#000000"
 
 # change focus
 bindsym $mod+h focus left
@@ -159,4 +164,4 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000
 # status bar
 bar {
         status_command i3status
-}
+ }
