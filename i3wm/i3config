@@ -1,5 +1,6 @@
 #i3 config (qm0937)
 
+#-----------------------------------
 
 #mod
 set $mod Mod4
@@ -7,9 +8,17 @@ set $mod Mod4
 #font
 font pango:DejaVu Sans Mono 8
 
+#floating_modifier
 floating_modifier $mod
 
 #-----------------------------------
+#Shortcuts
+
+# TODO:init
+# Start script for creating folder hierarchy
+# install the stuff
+# run crons
+# bindsym $mod+Shift+Alt+i 
 
 # start terminator
 bindsym $mod+Return exec terminator
@@ -30,17 +39,18 @@ bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+n exec nautilus 
 
 # start WireShark
-# bindsym $mod+Shift+n exec wireshark 
+#bindsym $mod+Shift+n exec wireshark 
 
 # change backroung
-bindsym $mod+Shift+x exec --no-startup-id "/usr/bin/feh --bg-scale /home/qm0937/yin/configs/i3wm/background/3.jpg"
-# black bacground
+bindsym $mod+Shift+x exec --no-startup-id "/usr/bin/feh --bg-scale ~/yin/configs/i3wm/background/3.jpg"
 
-bindsym $mod+Shift+u exec --no-startup-id "/usr/bin/feh --bg-scale /home/qm0937/yin/configs/i3wm/background/6.jpg"
-#-----------------------------------
+# black bacground
+bindsym $mod+Shift+u exec --no-startup-id "/usr/bin/feh --bg-scale ~/yin/configs/i3wm/background/6.jpg"
 
 #lock
 bindsym $mod+Shift+0 exec i3lock --color 000000 
+
+#-----------------------------------
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -164,4 +174,7 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000
 # status bar
 bar {
         status_command i3status
- }
+}
+
+# bar toggle, hide or show 
+bindsym $mod+m bar mode toggle
