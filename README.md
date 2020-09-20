@@ -1,5 +1,5 @@
 configs
-
+outdated
 https://github.com/Raimondi/delimitMate
 https://github.com/VundleVim/Vundle.vim
 https://github.com/tpope/vim-pathogen
