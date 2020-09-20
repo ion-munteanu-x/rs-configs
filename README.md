@@ -1,4 +1,5 @@
 configs
+test
 
 https://github.com/Raimondi/delimitMate
 https://github.com/VundleVim/Vundle.vim
